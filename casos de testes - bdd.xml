@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>SLS</projectKey>
+    <exportDate>2023-01-03 23:04:30 UTC</exportDate>
+    <folders>
+        <folder fullPath="Página de produtos" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="77630784" key="SLS-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rayane France</createdBy>
+            <createdOn>2023-01-03 22:37:29 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Página de produtos]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente deseja adicionar produto ao carrinho]]></name>
+            <objective><![CDATA[Verficar funcionalidade do bot&atilde;o 'adicionar ao carrinho']]></objective>
+            <owner>5fa212f3c9b15a0078e634cf</owner>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela de produtos
+When clicar no botão 'adicionar ao carrinho'
+Then o produto será adicionado ao seu carrinho de compras]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="77630823" key="SLS-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rayane France</createdBy>
+            <createdOn>2023-01-03 22:44:34 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Página de produtos]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente deseja adicionar 2 produtos iguais ao carrinho utilizando botão de incremento]]></name>
+            <objective><![CDATA[Verificar funcionalidade do bot&atilde;o incremento]]></objective>
+            <owner>5fa212f3c9b15a0078e634cf</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given cliente acessa página de produtos
+And deseja comprar 2 produtos iguais
+When adiciona 2 produtos com o botão de incremento
+And clica no botão 'adicionar ao carrinho'
+Then 2 produtos iguais são adicionados ao carrinho]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>

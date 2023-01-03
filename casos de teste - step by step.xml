@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>SLS</projectKey>
+    <exportDate>2023-01-03 23:04:50 UTC</exportDate>
+    <folders>
+        <folder fullPath="Página de produtos" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="77630835" key="SLS-T4" paramType="PARAMETER">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rayane France</createdBy>
+            <createdOn>2023-01-03 22:46:11 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Página de produtos]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente deseja remover item do carrinho utilizando o botão de incremento]]></name>
+            <objective><![CDATA[Verificar funcionalidade do bot&atilde;o de incremento para remover itens do carrinho pela p&aacute;gina de produtos]]></objective>
+            <owner>5fa212f3c9b15a0078e634cf</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters>
+                <parameter index="0">
+                    <defaultValue><![CDATA[1]]></defaultValue>
+                    <name><![CDATA[Quantidade do produto x]]></name>
+                </parameter>
+            </parameters>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Cliente acessa p&aacute;gina de produtos]]></description>
+                        <expectedResult><![CDATA[Visualiza quantidade do produto x]]></expectedResult>
+                        <testData><![CDATA[<var>Quantidade do produto x</var>&nbsp;]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Cliente aciona bot&atilde;o de incremento para diminuir quantidade do produto]]></description>
+                        <expectedResult><![CDATA[Visualiza quantidade do produto x igual a 0 e aparece aviso de item removido do carrinho]]></expectedResult>
+                        <testData><![CDATA[<var>Quantidade do produto x</var>&nbsp;-1]]></testData>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="77630858" key="SLS-T5">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Rayane France</createdBy>
+            <createdOn>2023-01-03 22:52:00 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Página de produtos]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente deseja visualizar avaliação do produto na página de produtos]]></name>
+            <objective><![CDATA[Verificar a exposi&ccedil;&atilde;o correta dos atributos do produto e visualizar a avalia&ccedil;&atilde;o de cada item]]></objective>
+            <owner>5fa212f3c9b15a0078e634cf</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Cliente acessa p&aacute;gina de produtos]]></description>
+                        <expectedResult><![CDATA[Cliente visualiza as avalia&ccedil;&otilde;es de cada produto embaixo do seu respectivo nome]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
